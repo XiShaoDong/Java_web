@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./08welcome.html" method="get">
+        <input type="hidden" name="隐藏" value="不让你改你就别看了"><br>
+        <input type="text" value="456" readonly><br>
+        <input type="text" value="789" disabled><br>
+
+        username: 
+        <input type="text" name="username"/><br>
+        password: 
+        <input type="password" name="password"/><br>
+        <!-- radio 如果name相同时选项会相斥 选男 女被勾掉 选女 男被勾掉 -->
+        sex: 
+        <input type="radio" value="0" name="gender" checked>男 
+        <input type="radio" value="1" name="gender" >女<br>
+        hobby: 
+        <input type="checkbox" name="hobby" value="0" checked>蔡徐坤
+        <input type="checkbox" name="hobby" value="1">萨日朗
+        <input type="checkbox" name="hobby" value="2">穿山甲 <br>
+       
+        Introduction: 
+        <textarea name="intro" id="0" cols="30" rows="5"></textarea><br>
+        nation: 
+        <select name="nation" id="0">
+            <option value="0">CHN</option>
+            <option value="1">US</option>
+            <option value="2">UK</option>
+            <option value="-1" selected>Select one</option>
+        </select><br>
+        select your hero: 
+        <input type="file"><br>
+       <input type="submit">
+       <input type="reset">
+
+
+
+    </form>
+</body>
+</html>
